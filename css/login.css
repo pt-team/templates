@@ -40,8 +40,8 @@ p{ line-height: 25px;}
 .fix{*zoom:1;}
 .fix:after{display:block; content:"clear"; height:0; clear:both; overflow:hidden; visibility:hidden;}
 /* content */
-#sidebar{ background: red;  height: 100%; margin-right: 390px;  overflow: hidden; }
-#sidebar img{}
+#sidebar{ background: red;  height: 100%; margin-right: 400px;  overflow: hidden; position: relative; }
+#sidebar img{ position: absolute;}
 
 #login-wrapper{ width: 370px; padding: 0 70px 0 30px; box-sizing:border-box; position: absolute; right: 10px; top: 50%; margin-top: -90px; }
 .login-container input, .login-btn{ color: #fff;}

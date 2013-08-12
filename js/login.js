@@ -16,12 +16,16 @@ $(function(){
 	    var childtH = parseInt(child.css('height'));
 		var parent_scale = parentW/parentH;
 		var child_scale = childtW/childtH;
+
 		if(parent_scale >= child_scale){//
-			child.attr('style','width:' + parentW);
+			_H = (childtW/parentW)*childtH;
+			var _top = (parentH - _H)/2;
+			child.attr('style','width:' + parentW + ';top:' + _top);
 		}else{
-			child.attr('style','height:' + parentH);
+			var _W = (parentH/childtH)*childtW;
+			var _left = (parentW - _W)/2;
+			child.attr('style','height:' + parentH + ';left:' + _left);
 		}
-		
-	}
+	};
 
 });
