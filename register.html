@@ -1,19 +1,31 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>User Login</title>
+<title>Register</title>
 <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 <link rel="stylesheet" type="text/css" href="css/login.css">
 </head>
 <body>
- <aside id="sidebar"><img src="img/slider_pic_9.jpg"></aside>
+ <aside id="sidebar"><img src="img/2.jpg"></aside>
  <section id="login-wrapper">
  <form id="loginform" action="">
- 	<div class="login-container"><input type="text"  disabled="disabled" value="username" class="disabledinput b"><i class="icon-user color999"></i></div>
- 	<p class="dn" id="loginTip">Tip:</p>
- 	<div class="login-container"><input type="password" autofocus class="normalinput" placeholder="password"><i class="icon-lock"></i></div>
- 	<div class="login-container"><input type="password"  class="normalinput" placeholder="confirm password"><i class="icon-lock"></i></div>
-    <input name="" type="submit" class="login-btn" value="LOGIN" >
+ 	<div class="login-container">
+ 		<input type="text"  disabled="disabled" value="username" class="disabledinput b">
+ 		<i class="icon-user color999"></i>
+ 	</div>
+ 	<div class="login-container">
+ 		<p class="tips dn">Tip:</p>
+ 		<input id="password" type="password" class="normalinput" placeholder="password" >
+ 		<i class="icon-lock"></i>
+ 		<i class="icon-warning-sign red dn"></i>
+ 	</div>
+ 	<div class="login-container">
+ 		<p class="tips dn" >Tip:</p>
+ 		<input  id="confirmpassword" type="password"  class="normalinput" placeholder="confirm password">
+ 		<i class="icon-lock"></i>
+ 		<i class="icon-warning-sign red dn"></i>
+ 	</div>
+    <input id="login" class="login-btn" name="" type="submit"  value="LOGIN" >
     <p class="txtright dn" id="forgotPWD"><a href="javascript:volid(0)">Forgot password?</a></p> 
  </form>
 </section>
